@@ -31,8 +31,8 @@
         liff.getProfile().then(profile => {
             let userId = profile.userId;
             let displayName = profile.displayName;
-            let pictureUrl = profile.pictureUrl;
-            let url = "https://script.google.com/macros/s/AKfycbwGzwObHHXXusQq-2nwXNQtaDnGnXxd5Dj0at92pCm8XReIN48SfTBQHL6ImdyghrvP/exec?userId=" + userId + "&displayName=" + displayName + "&pictureUrl=" + pictureUrl;
+            let pictureUrl = profile.pictureUrl; 
+            let url = "https://script.google.com/macros/s/AKfycbzOqUKOMeHrOdKyRDNj1BkfdHmzBILdykjOsV62iFsRdrPb8bJcruBWMwjQUqdg2r5Q/exec?userId=" + userId + "&displayName=" + displayName + "&pictureUrl=" + pictureUrl;
             document.getElementById("formframe").src = url;
         }).catch(err => console.error(err));
     }
